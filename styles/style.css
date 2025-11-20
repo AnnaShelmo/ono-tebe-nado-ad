@@ -1,1 +1,211 @@
-/* место для вашего кода */
+/* Сброс и глобальные настройки */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5;
+  color: #1a1a1a;
+  background-color: #fff;
+  min-width: 1024px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* === Шапка === */
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 20px 40px; /* можно подправить под макет */
+  background-color: #fff;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: start;
+}
+
+.header__links-list {
+  display: flex;
+  gap: 30px;
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__link {
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: lowercase;
+}
+
+.header__link_active {
+  font-weight: 600;
+}
+
+.header__logo {
+  display: block;
+}
+
+.header__logo-image {
+  width: 148px; /* по макету */
+  height: auto;
+}
+
+.header__address {
+  justify-self: end;
+  text-align: right;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.header__address a {
+  display: block;
+}
+
+/* === Обложка === */
+.cover {
+  position: relative;
+  background: url('../images/cover-bg.jpg') center/cover no-repeat;
+  padding: 120px 40px;
+  text-align: center;
+  color: #fff;
+}
+
+.cover .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0,0,0,0.3);
+  z-index: 1;
+}
+
+.cover__title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.1;
+  z-index: 2;
+  position: relative;
+}
+
+.cover__line {
+  display: block;
+}
+
+.cover__description {
+  margin-top: 30px;
+  z-index: 2;
+  position: relative;
+}
+
+.cover__description-text {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.bet-button {
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.bet-button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* === Лоты === */
+.lots {
+  padding: 80px 40px;
+}
+
+.lots h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.lots__list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.lots__item {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.lots__link {
+  display: block;
+  height: 100%;
+}
+
+.lots__item article {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lots__item article img {
+  border-radius: 4px;
+}
+
+/* === Секция о аукционе === */
+.about {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 40px;
+  padding: 80px 40px;
+}
+
+.about__column-text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about__text p:first-child {
+  margin-bottom: 20px;
+}
+
+/* === Футер === */
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: start;
+  padding: 40px;
+  background-color: #f9f9f9;
+  gap: 20px;
+}
+
+.footer__address {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+}
