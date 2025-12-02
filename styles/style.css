@@ -30,32 +30,28 @@
 }
 
 /* Шапка */
-.header__menu {
+.header_menu {
   justify-self: start;
 }
 
-.header__links-list {
+.menu_links {
   display: flex;
   gap: 32px;
   list-style: circle;
   margin-top: -7px;
 }
 
-.header__links-list-item {
+.link_list {
   font-size: 18px;
   text-underline-offset: 4px;
 }
 
-.header__links-list-item_no-bullit {
+.main_link_marker {
   text-decoration: none;
   list-style: none;
 }
 
-.header__link_active {
-  text-decoration: none;
-}
-
-.header__logo-image {
+.header_logo {
   justify-self: center;
   width: 145px;
   padding: 4px;
@@ -71,12 +67,6 @@
   margin-bottom: 4px;
   font-style: normal;
   width: 240px;
-  list-style: none;
-  padding: 0;
-}
-
-.address li {
-  list-style: none;
 }
 
 /* Обложка */
@@ -87,7 +77,7 @@
   z-index: 1;
 }
 
-.cover__title {
+.cover_title {
   position: relative;
   z-index: 2;
   display: flex;
@@ -101,12 +91,12 @@
   padding: 0;
 }
 
-.aligned-text {
+.text_cover {
   display: block;
   letter-spacing: 0.3em;
 }
 
-.aligned-text_center {
+.text_center {
   display: block;
   letter-spacing: 0.3em;
   text-align: center;
@@ -114,7 +104,7 @@
   margin-top: 14px;
 }
 
-.aligned-text_right {
+.text_right {
   display: block;
   letter-spacing: 0.3em;
   text-align: right;
@@ -123,15 +113,15 @@
   margin-right: -30px;
 }
 
-.letter-spacing-extended {
+.letter_spacing {
   letter-spacing: 0.6em;
 }
 
-.no-letter-spacing {
+.no_letter_spacing {
   letter-spacing: 0;
 }
 
-.cover__description {
+.cover_description {
   position: relative;
   z-index: 2;
   display: flex;
@@ -142,7 +132,7 @@
   padding: 0;
 }
 
-.cover__description-text {
+.cover_text {
   color: #fff;
   font-size: 22px;
   line-height: 1.27;
@@ -151,7 +141,7 @@
   margin-right: 6px;
 }
 
-.bet-button {
+.button {
   border: 1px solid #fff;
   padding: 12px 32px;
   color: #fff;
@@ -165,7 +155,7 @@
 }
 
 /* Лоты */
-.lots__heading {
+.title_lots {
   margin-bottom: 28px;
   padding-left: 40px;
   font-size: 40px;
@@ -174,7 +164,7 @@
   padding-bottom: 0;
 }
 
-.lots__card-list {
+.container_lots {
   display: flex;
   flex-wrap: nowrap;
   gap: 25px;
@@ -185,7 +175,7 @@
   margin-left: 0;
 }
 
-.lots__card-list-item {
+.card_lots {
   flex: 1;
   min-width: 0;
   width: auto;
@@ -193,7 +183,7 @@
   max-width: none;
 }
 
-.card-link {
+.card_link {
   display: block;
   height: 100%;
   text-decoration: none;
@@ -210,19 +200,19 @@
   background: center/cover no-repeat;
 }
 
-.card_type_film {
+.card_about_cinema {
   background-image: url("../images/card-lot-01.jpg");
 }
 
-.card_type_book {
+.card_about_book {
   background-image: url("../images/card-lot-02.jpg");
 }
 
-.card_type_picture {
+.card_about_picture {
   background-image: url("../images/card-lot-03.jpg");
 }
 
-.card__title {
+.card_title {
   position: relative;
   z-index: 2;
   font-size: 22px;
@@ -231,7 +221,7 @@
   text-transform: uppercase;
 }
 
-.card__text {
+.text_on_card {
   position: relative;
   z-index: 2;
   font-size: 20px;
@@ -240,7 +230,7 @@
   margin-bottom: -36px;
 }
 
-.lots__look-more-link {
+.view_more {
   margin-left: 40px;
   font-size: 20px;
   text-underline-offset: 5px;
@@ -248,11 +238,11 @@
 }
 
 /* Об аукционе */
-.about__container {
+.about_container {
   display: contents;
 }
 
-.about__logo {
+.about_logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -263,18 +253,18 @@
   justify-self: center;
 }
 
-.about__logo-image {
+.about_logo_image {
   width: 148px;
 }
 
-.about__content {
+.about_content {
   display: flex;
   flex-direction: column;
   padding: 0;
   gap: 0;
 }
 
-.about__title {
+.title_about {
   margin: 100px 0;
   font-size: 40px;
   text-transform: uppercase;
@@ -282,7 +272,7 @@
   line-height: normal;
 }
 
-.about__text {
+.about_text {
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -291,42 +281,42 @@
   padding: 0;
 }
 
-.about__text-paragraph {
+.text_up, .text_down {
   padding: 0;
 }
 
 /* Подвал */
-.footer__menu {
+.footer_menu {
   justify-self: center;
   padding-left: 0;
 }
 
-.footer__menu-list {
+.footer_menu_links {
   list-style: none;
   text-align: center;
 }
 
-.footer__menu-list-item {
+.footer_links {
   font-size: 18px;
   text-underline-offset: 4px;
 }
 
-.footer__menu-link_active {
+.footer_main {
   text-decoration: none;
 }
 
-.footer__social-list {
+.footer_images {
   justify-self: end;
   display: flex;
   gap: 48px;
   list-style: none;
 }
 
-.footer__social-icon {
+.images_footer {
   width: 48px;
 }
 
-.footer__address {
+.footer_address {
   max-width: 240px;
   font-size: 18px;
   line-height: 1.35;
